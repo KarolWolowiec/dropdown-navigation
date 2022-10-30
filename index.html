@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/ab9e76cb3d.js" crossorigin="anonymous"></script>
+
+  <title>Intro section with dropdown navigation</title>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="image">
+        <img src="images/logo.svg" alt="logo" width="120" height="85%">
+    </div>
+    <!-- Navbar elements -->
+    <div class="list">
+      <div class="element dropdown">
+        <span class="dropbtn" id="features-btn">
+            Features     
+            <i class="fa-solid fa-angle-down"></i>
+        </span>
+        <div class="dropdown-content">
+          <a href="#"><i class="fa-solid fa-list" style="color:rgb(181, 72, 181)"></i>       Todo List</a>
+          <a href="#"><i class="fa-regular fa-calendar" style="color:teal"></i>       Calendar</a>
+          <a href="#"><i class="fa-solid fa-bell" style="color:gold"></i>       Reminders</a>
+          <a href="#"><i class="fa-solid fa-clock" style="color:rgb(181, 72, 181)"></i>       Planners</a>
+        </div>
+      </div>
+      <div class="element dropdown">
+        <span class="dropbtn" id="company-btn">
+            Company    
+            <i class="fa-solid fa-angle-down"></i>
+        </span>
+        <div class="dropdown-content">
+          <a href="#">Element 1</a>
+          <a href="#">Element 2</a>
+          <a href="#">Element 3</a>
+          <a href="#">Element 4</a>
+        </div>
+      </div>
+      <div class="element careers">Careers</div>
+      <div class="element about">About</div>
+    </div>
+    <!-- Login section -->
+    <div class="account">
+      <button class="btn-style login">Login</button>
+      <button class="btn-style register">Register</button>
+    </div>
+
+    <!-- Side-menu toggle button -->
+    <div class="menu-toggle">
+      <i class="fa-solid fa-bars" id="openNavBtn"></i>
+    </div>
+  </nav>
+  
+  <!-- Side-menu toggle content -->
+  <div id="mySidebar" class="sidebar">
+    <i href="javascript:void(0)" class="fa-solid fa-xmark closebtn" id="closeNavBtn"></i>
+    <a href="#" id="sidebar-features">Features        <i class="fa-solid fa-angle-down"></i></a>
+      <div class="sidebar-dropdown"> 
+        <a href="#"><i class="fa-solid fa-list" style="color:rgb(181, 72, 181)"></i>       Todo List</a>
+        <a href="#"><i class="fa-regular fa-calendar" style="color:teal"></i>       Calendar</a>
+        <a href="#"><i class="fa-solid fa-bell" style="color:gold"></i>       Reminders</a>
+        <a href="#"><i class="fa-solid fa-clock" style="color:rgb(181, 72, 181)"></i>       Planners</a>
+      </div>
+    <a href="#" id="sidebar-company">Company        <i class="fa-solid fa-angle-down"></i></a>
+      <div class="sidebar-dropdown">
+        <a href="#">History</a>
+        <a href="#">Our team</a>
+        <a href="#">Blog</a>
+      </div>
+    <a href="#">Careers</a>
+    <a href="#">About</a>
+    <div class="account-menu">
+      <button class="btn-style login-menu">Login</button>
+      <button class="btn-style register-menu">Register</button>
+    </div>
+  </div>
+
+      <!-- Main / text section -->
+  <main>
+    <div class="content">
+      <h1>Make<br> remote work</h1>
+      <p>Get your team in sync, no matter your location.
+         Streamline processes, create team rituals, and
+         watch productivity soar.
+      </p><br>
+      <button class="btn-style btn-content"><b>Learn more</b></button>
+      <!-- Main / partners section -->
+      <div class="partners">
+        <div>
+          <img src="images/client-databiz.svg" alt="databiz">
+        </div>
+        <div>
+          <img src="images/client-audiophile.svg" alt="audiophile">
+        </div>
+        <div>
+          <img src="images/client-meet.svg" alt="meet">
+        </div>
+        <div>
+          <img src="images/client-maker.svg" alt="maker">
+        </div>
+      </div>
+    </div>
+    <!-- Main / img section -->
+    <div class="main-img">
+      <img src="images/image-hero-desktop.png" alt="content-img" class="content-img">
+    </div>
+  </main>
+  <script src="app.js" async defer></script>
+</body>
+</html>
